@@ -83,9 +83,9 @@ function App() {
 
   return (
     <div className={dark ? 'dark' : ''}>
-      <main className="bg-stone-100 transition-all dark:bg-stone-600 font-['Rubik'] font-medium flex flex-col text-stone-600 dark:text-stone-100 items-center w-full h-screen">
-        <nav className="flex w-full px-8 py-6 items-center justify-between">
-          <h1 className="text-xl uppercase tracking-widest">Hangman</h1>
+      <main className="bg-stone-100 transition-all dark:bg-stone-600 font-['Rubik'] font-medium flex flex-col text-stone-600 dark:text-stone-100 items-center w-full min-h-screen">
+        <nav className="flex flex-col sm:flex-row gap-6 w-full px-8 py-6 items-center justify-between">
+          <h1 className="text-3xl sm:text-xl uppercase tracking-widest">Hangman ;-;</h1>
           <ul className="flex items-center gap-8">
             <li>
               <button
@@ -143,7 +143,7 @@ function App() {
               </div>
             ))}
           </div>
-          <div className="flex flex-wrap gap-2 w-1/2 justify-center">
+          <div className="flex flex-wrap gap-2 w-full px-6 sm:px-16 lg:w-1/2 justify-center">
             {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((letter) => (
               <button
                 type="button"
